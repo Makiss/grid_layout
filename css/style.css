@@ -1,0 +1,51 @@
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.row {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.row + .row {
+	margin-top: 20px;
+}
+
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.col-6 {
+	width: calc(16.6666667% - 20px);
+}
+
+.col-4 {
+	width: calc(25% - 20px);
+}
+
+.col-3 {
+	width: calc(33.33333333333333% - 20px);
+}
+
+.col-2 {
+	width: calc(50% - 20px);
+}
+
+.col-1 {
+	width: calc(100% - 20px);
+}
