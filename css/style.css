@@ -6,12 +6,14 @@ img {
 
 .container {
 	margin: 0 auto;
-	width: 1200px;
+	max-width: 1700px;
+	min-width: 320px;
 }
 
 .row {
 	margin-left: -10px;
 	margin-right: -10px;
+	width: 100%;
 }
 
 .row + .row {
